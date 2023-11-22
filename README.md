@@ -1,8 +1,6 @@
 
-# ITCS414_Information Storage and Retrieval
+# ITCS443_Parallel and Distributed Systems
 ## Contributors
-    6488072 Pachanitha Saeheng
-    6488086 Chutweeraya Sriwilailak
     6488189 Chommakorn Sontesadisai
     6488190 Nattanicha Sinsawet
 
