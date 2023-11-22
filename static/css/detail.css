@@ -1,0 +1,46 @@
+.story {
+    background: url("../img/33-bg.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
+  .story__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .story__content .title {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+  }
+  
+  .story__content .description {
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+  }
+  
+  .story__content a {
+    margin-top: 10rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #570E19;
+  }
+
+  .story__content a:hover{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #af5360;
+  }
+  
+  .story__image img {
+    max-width: 450px;
+    margin: auto;
+    border-radius: 2rem;
+  }

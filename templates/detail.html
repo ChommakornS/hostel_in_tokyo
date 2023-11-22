@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/detail.css" />
+
+
+    <title>{{ hostel_details.hostel_name }} Details</title>
+
+    </head>
+  <body>
+        <div class="blank">
+
+        </div>
+        <nav>
+        <div class="nav__logo"><img src="https://cdn.discordapp.com/attachments/867404242062278716/1173259980875509760/kanko_logo.png?ex=65634e81&is=6550d981&hm=9961436ce111d4330d7c196ff64b65da19e5b5caf362664d8b451d1551948b4b&" width="50" height="80"></div>
+        <ul class="nav__links">
+            <li class="link"><a href="/">Home</a></li>
+            <li class="link"><a href="#">Book</a></li>
+            <li class="link"><a href="#">Blog</a></li>
+            <li class="link"><a href="#">Contact Us</a></li>
+        </ul>
+        </nav>
+        
+        <section class="story">
+            <div class="section__container story__container">
+              <div class="story__image">
+                <img src="{{ hostel_details.link_discord }}" />
+              </div>
+              <div class="story__content">
+                <p class="section__subheader">An Overview about a Hostel</p>
+                <h2 class="section__header">{{ hostel_details.hostel_name }}</h2>
+                <p class="title">
+                  <span><i class="ri-star-fill"></i> Rating {{ hostel_details.rating }} Star</span>
+                  <span><i class="ri-price-tag-3-fill"></i> Price {{ hostel_details.price_from }}¥</span>
+                  <span><i class="ri-pin-distance-fill"></i> {{ hostel_details.distance }}</span>
+
+                </p>
+                <p class="description">
+                    {{ hostel_details.description }}
+                </p>
+
+                <a href="#" onclick="goBack()">Back To Search Result</a>
+
+
+              </div>
+            </div>
+          </section>
+        
+          <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+    </body>
+</html>
